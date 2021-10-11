@@ -1,0 +1,29 @@
+PODS:
+  - AddThen (0.1.3)
+  - SnapKit (5.0.1)
+  - Viewtiful (0.1.0):
+    - AddThen (~> 0.1.3)
+    - SnapKit (~> 5.0.0)
+
+DEPENDENCIES:
+  - AddThen (~> 0.1.3)
+  - SnapKit (~> 5.0.0)
+  - Viewtiful (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AddThen
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Viewtiful:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AddThen: fb66e1312ac94a15bc5f6ca240a02b7b9a0d15af
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Viewtiful: 39a981b3e05fcd02ac258a45b25ab9f919722cdc
+
+PODFILE CHECKSUM: 21d6f06283dbced9a80e444e53c4281278edcf40
+
+COCOAPODS: 1.10.1

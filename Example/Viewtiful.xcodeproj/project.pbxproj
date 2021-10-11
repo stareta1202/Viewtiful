@@ -42,10 +42,10 @@
 		70B6903687359E86D0CCD89E /* Pods_Viewtiful_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viewtiful_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1BF7379E57D3765A913657 /* Pods-Viewtiful_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viewtiful_Example.debug.xcconfig"; path = "Target Support Files/Pods-Viewtiful_Example/Pods-Viewtiful_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		87D20258C7847DD6F974A628 /* Pods-Viewtiful_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viewtiful_Tests.release.xcconfig"; path = "Target Support Files/Pods-Viewtiful_Tests/Pods-Viewtiful_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A3DD381D698B66A789422EAD /* Viewtiful.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Viewtiful.podspec; path = ../Viewtiful.podspec; sourceTree = "<group>"; };
+		A3DD381D698B66A789422EAD /* Viewtiful.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Viewtiful.podspec; path = ../Viewtiful.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B9926B6DB201705738DA131F /* Pods-Viewtiful_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viewtiful_Example.release.xcconfig"; path = "Target Support Files/Pods-Viewtiful_Example/Pods-Viewtiful_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B9C62995B7893E32DE4C0C06 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C5FE637CBDBFB7B817153028 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B9C62995B7893E32DE4C0C06 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C5FE637CBDBFB7B817153028 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EFB08EDE4487BA3679FD5B4A /* Pods-Viewtiful_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viewtiful_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Viewtiful_Tests/Pods-Viewtiful_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				EFB08EDE4487BA3679FD5B4A /* Pods-Viewtiful_Tests.debug.xcconfig */,
 				87D20258C7847DD6F974A628 /* Pods-Viewtiful_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Viewtiful_Example/Pods-Viewtiful_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AddThen/AddThen.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Viewtiful/Viewtiful.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AddThen.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Viewtiful.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
